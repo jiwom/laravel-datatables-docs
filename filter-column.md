@@ -4,7 +4,7 @@ In some cases, we need to implement a custom search for a specific column.
 To achieve this, you can use `filterColumn` api.
 
 ```php
-use DataTables;
+use Yajra\DataTables\Facades\DataTables;
 use Illuminate\Support\Facades\DB;
 use App\User;
 
