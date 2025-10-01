@@ -8,7 +8,7 @@ You can add a custom column to your response by using the `addColumn` api.
 ## Add Column with Blade Syntax
 
 ```php
-use DataTables;
+use Yajra\DataTables\Facades\DataTables;
 
 Route::get('user-data', function() {
 	$model = App\User::query();
@@ -23,7 +23,7 @@ Route::get('user-data', function() {
 ## Add Column with Closure
 
 ```php
-use DataTables;
+use Yajra\DataTables\Facades\DataTables;
 
 Route::get('user-data', function() {
 	$model = App\User::query();
@@ -42,7 +42,7 @@ Route::get('user-data', function() {
 > {tip} You can use view to render your added column by passing the view path as the second argument on `addColumn` api.
 
 ```php
-use DataTables;
+use Yajra\DataTables\Facades\DataTables;
 
 Route::get('user-data', function() {
 	$model = App\User::query();
@@ -64,7 +64,7 @@ Hi {{ $name }}!
 > {tip} Just pass the column order as the third argument of `addColumn` api.
 
 ```php
-use DataTables;
+use Yajra\DataTables\Facades\DataTables;
 
 Route::get('user-data', function() {
 	$model = App\User::query();
